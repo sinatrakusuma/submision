@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List book</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            List Book
+        </h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="container bg-white shadow">
+            <h2 class="container-header text-center">Tambahkan koleksi buku anda</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="id">Masukan id :</label>
+                    <input type="text" id="nomoid" name="id" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="title">Masukan title :</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="author">Masukan author :</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="date">Masukkan year :</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">Belum selesai di baca</h2>
+            <div class="list-item" id="todos">
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">sudah selesaidi baca</h2>
+            <div class="list-item" id="completed-todos">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
